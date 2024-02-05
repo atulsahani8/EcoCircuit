@@ -1,8 +1,7 @@
 import logo from './logo.svg';
 import './App.scss';
-import Header from './Header';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from './Components/Navbar/Navbar';
+import { Header, Footer } from './Containers'; 
 
 const App = () => {
   return (

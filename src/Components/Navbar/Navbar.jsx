@@ -1,7 +1,7 @@
 import React from 'react'
-import './scss/Navbar.scss'
-import logo1 from './assets/logo1-removebg.png'
-import logo2 from './assets/ecocircuit_logo2-removebg.png'
+import './Navbar.scss'
+import logo1 from '../../assets/logo1-removebg.png'
+import logo2 from '../../assets/ecocircuit_logo2-removebg.png'
 
 const Navbar = () => {
   return (
