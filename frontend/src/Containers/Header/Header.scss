@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Cabinet Grotesk";
+    src: url(../../assets/CabinetGrotesk-Bold.otf);
+}
+@font-face {
+    font-family: "Movatif";
+    src: url('../../assets/Movatif\ W00\ ExtraLight.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app_header {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #111; 
+
+    h1 {
+        font-size: 15vh;
+        font-family: "Cabinet Grotesk";
+    }
+
+    p {
+        font-size: 3vh;
+        font-family: "Cabinet Grotesk";
+    }
+}
+
+.hero-img {
+    flex: 1;
+    width: 100vw;
+    height: 50vh;
+    img{
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+}
+
