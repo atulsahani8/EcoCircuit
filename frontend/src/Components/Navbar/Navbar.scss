@@ -1,63 +1,102 @@
-@font-face {
-    font-family: "Movatif";
-    src: url('../../assets/Movatif\ W00\ ExtraLight.otf');
-}
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
     padding: 10px 20px;
-}
-   
-.navbar__logo {
+  }
+  
+  .navbar__logo {
     display: flex;
     align-items: center;
-
-    img{
-        width: 150px;
-        height: auto;
+  
+    img {
+      width: 150px;
+      height: auto;
     }
-}
-   
-.navbar__list {
+  }
+  
+  .navbar__list {
     display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-   
-.navbar__item {
+  }
+  
+  .navbar__item {
     padding: 0 10px;
     margin-left: 20px;
-}
-   
-.navbar__link {
+  }
+  
+  .navbar__link {
     text-decoration: none;
     color: #000;
     font-size: 2vh;
     font-weight: bold;
     letter-spacing: 1.5px;
     font-family: "Movatif";
-
-    &:hover{
-        color: #313bac;
+  
+    &:hover {
+      color: #313bac;
     }
-}
-.login{
+  }
+  
+  .login {
     font-family: "Movatif";
     font-size: 2vh;
     font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 6vw;
-    padding: 5px;
-    border-radius: 20px;
+    padding: 5px 10px; 
     background-color: #fff;
-
-    img{
-        width: 1.7vw;
-        padding-left: 10px; 
+  
+    span {
+      margin-right: 10px; 
     }
-}
+  
+    img {
+      width: 1.7vw;
+      padding-left: 5px;
+    }
+  }
+  
+  .menu-icon {
+    display: none; 
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+      order: 3; 
+    }
+  
+    .navbar__list {
+      flex-direction: column;
+      position: absolute;
+      top: 80px; 
+      right: 0; 
+      width: 100%;
+      background-color: #fff;
+      padding: 10px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in;
+      max-height: 0;
+      overflow: hidden;
+    }
+  
+    .navbar__list.open {
+      max-height: 400px; 
+    }
+  
+    .navbar__item {
+      margin: 10px 0;
+      padding: 0;
+    }
+  
+    .navbar__logo {
+      order: 1; 
+    }
+  }
+  
