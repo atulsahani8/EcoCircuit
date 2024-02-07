@@ -6,7 +6,6 @@
     font-family: "Movatif";
     src: url('../../assets/Movatif\ W00\ ExtraLight.otf');
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +21,7 @@
 
 .hero {
     width: 100vw;
-    height: 100vh; 
+    min-height: 80vh; 
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -31,13 +30,14 @@
     color: #111; 
 
     h1 {
-        font-size: 15vh;
+        font-size: 8vh; 
         font-family: "Cabinet Grotesk";
     }
 
     p {
-        font-size: 3vh;
+        font-size: 2vh; 
         font-family: "Cabinet Grotesk";
+        margin-bottom: 20px; 
     }
 }
 
@@ -53,3 +53,26 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .hero {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 6vh;
+    }
+
+    .hero p {
+        font-size: 2.2vh;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 5vh;
+    }
+
+    .hero p {
+        font-size: 1.8vh;
+    }
+}
