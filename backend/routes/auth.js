@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const User = require("../models/User");
+const Contact = require("../models/Contact");
 
 router.post("/login", async (req, res) => {
   const { username, password } = req.body;
@@ -42,6 +43,19 @@ router.post("/register", async (req, res) => {
     res.json({ success: true, message: "Registration successful" });
   } catch (error) {
     console.error(error);
+    res.status(500).json({ success: false, message: "Internal server error" });
+  }
+});
+
+router.post("/contact", async (req, res) => {
+  const { name, email, message } = req.body;
+
+  try {
+    const newSubmission = new Contact({ name, email, message });
+    await newSubmission.save();
+    res.json({ success: true, message: "Contact form submitted successfully" });
+  } catch (error) {
+    console.error("Error submitting contact form:", error);
     res.status(500).json({ success: false, message: "Internal server error" });
   }
 });
