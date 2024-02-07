@@ -12,8 +12,8 @@
   
     .footer-logo {
       img {
-        height: 50px; /* Adjust height as needed */
-        width: auto; /* Maintain aspect ratio */
+        height: 50px; 
+        width: auto; 
       }
     }
   
@@ -50,18 +50,18 @@
       margin-top: 20px;
   
       input[type="email"] {
-        width: 100%; /* Take full width */
-        max-width: 300px; /* Limit maximum width */
+        width: 100%; 
+        max-width: 300px; 
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
         font-size: 16px;
-        margin-bottom: 10px; /* Add some space between input and button */
+        margin-bottom: 10px; 
       }
   
       button {
-        width: 100%; /* Take full width */
-        max-width: 300px; /* Limit maximum width */
+        width: 100%; 
+        max-width: 300px; 
         padding: 10px 20px;
         background-color: #313bac;
         color: #fff;
