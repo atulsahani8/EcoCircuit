@@ -1,0 +1,114 @@
+
+.about {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  // background-color: #F0EAD2;
+
+  .about-content {
+    width: 70%; 
+    height: auto;
+    padding: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+
+    .about-heading {
+      font-size: 3vh;
+      font-family: "CabinetGrotesk";
+    }
+
+    .about-paragraph {
+      font-size: 4vh;
+      font-family: "Coolvetica";
+      color: #6C584C;
+      font-weight: bold;
+      padding-top: 5vh;
+    }
+  }
+
+  .about-sub {
+    width: 100%;
+    height: auto;
+    padding: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    .sub{
+      .about-sub-text {
+        width: 100%;
+        max-width: 800px; 
+        text-align: center;
+        h1 {
+          font-size: 5vh;
+          justify-content: center;
+          font-family: "CabinetGrotesk";
+          padding: 5%;
+        }
+  
+        p { 
+          font-size: 3vh;
+          font-family: "Coolvetica";
+          font-weight: 600;
+        }
+      }
+    }
+    
+
+    .about-sub-image {
+      width: 100%;
+      max-width: 500px;
+      height: auto; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover; 
+      }
+    }
+  }
+}
+.about-powers {
+  width: 100%;
+  padding: 8%;
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "CabinetGrotesk";
+  }
+
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5%;
+
+    .item {
+      width: calc(50% - 20px); 
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color:#f8f8f8 ;
+      border-radius: 10px;
+
+      h3 {
+        font-size: 1.5rem;
+        font-family: "CabinetGrotesk";
+      }
+
+      p {
+        font-size: 1rem;
+        font-family: "Coolvetica";
+      }
+    }
+  }
+}
+
+
