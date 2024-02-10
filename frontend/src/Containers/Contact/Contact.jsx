@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // import { useNavigate } from "react-router-dom";
 import "./Contact.scss";
 
-const ContactForm = () => {
+const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -81,4 +81,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default Contact;
