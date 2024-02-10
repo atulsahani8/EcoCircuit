@@ -1,3 +1,4 @@
+$mobile : 320px;
 
 .about {
   margin: 0;
@@ -6,7 +7,7 @@
   // background-color: #F0EAD2;
 
   .about-content {
-    width: 70%; 
+    width: 100%; 
     height: auto;
     padding: 8%;
     display: flex;
@@ -57,9 +58,9 @@
       }
     }
     
-
     .about-sub-image {
       width: 100%;
+      padding: 2em;
       max-width: 500px;
       height: auto; 
       display: flex;
@@ -112,3 +113,11 @@
 }
 
 
+@media only screen and (max-device-width: 480px){
+  .about .about-sub{
+    flex-direction: column;
+  }
+  .about-paragraph{
+    font-size: 2vh;
+  }
+}
