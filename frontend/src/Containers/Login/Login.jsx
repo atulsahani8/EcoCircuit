@@ -58,7 +58,7 @@ const Login = () => {
 
         <button type="submit">Login</button>
         <br />
-        <p>
+        <p style={{ marginTop: '12px' }}> 
           Not a user? <Link to="/register">Register</Link>
         </p>
       </form>

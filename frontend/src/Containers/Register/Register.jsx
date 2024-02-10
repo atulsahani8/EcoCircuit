@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "./Register.scss"; 
+import "./Register.scss";
 
 const Register = () => {
   const [username, setUsername] = useState("");
@@ -75,7 +75,7 @@ const Register = () => {
 
         <button type="submit">Register</button>
         <br />
-        <p>
+        <p style={{ marginTop: "12px" }}>
           Already a user? <Link to="/login">Login</Link>
         </p>
       </form>
