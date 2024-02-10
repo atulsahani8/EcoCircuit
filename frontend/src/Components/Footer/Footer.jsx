@@ -1,20 +1,19 @@
-import React from 'react'
-import { Link } from 'react-router-dom'; 
+import React from "react";
+import { Link } from "react-router-dom";
 
-import './Footer.scss'
-import logo from '../../assets/ecocircuit_logo2-removebg.png'
-
+import "./Footer.scss";
+import logo from "../../assets/ecocircuit_logo2-removebg.png";
 
 const Footer = () => {
   return (
     <>
-        <div className='footer'>
-          <div className='footer-logo'>
-            <img src={logo} alt="" />
-          </div>
+      <div className="footer">
+        <Link to="/" className="footer-logo">
+          <img src={logo} alt="" />
+        </Link>
 
-          <div className="footer-links">
-            <ul className="footer__list">
+        <div className="footer-links">
+          <ul className="footer__list">
             <li className="footer__item">
               <Link to="/" className="footer__link">
                 Home
@@ -35,16 +34,16 @@ const Footer = () => {
                 Contact
               </Link>
             </li>
-            </ul>
-          </div>
-
-          <div className='footer-newsletter'>
-            <input type='email' placeholder='Enter your email' />
-            <button>Subscribe</button>
-          </div>
+          </ul>
         </div>
-    </>
-  )
-}
 
-export default Footer
+        <div className="footer-newsletter">
+          <input type="email" placeholder="Enter your email" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Footer;

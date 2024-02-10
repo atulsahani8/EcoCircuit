@@ -5,6 +5,9 @@ import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer'; 
 import { Header, Login, Register, Blogs, Contact, About} from './Containers'
 
+
+
+
 const App = () => {
   return (
     <div className="App">
@@ -16,6 +19,7 @@ const App = () => {
         <Route path="/blogs" element={<Blogs/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/about" element={<About/>} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer/>
     </div>
